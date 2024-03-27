@@ -1,81 +1,24 @@
-# WebApp boilerplate with React JS and Flask API
+SANDSMILE is a website designed to inspire and encourage users to become dedicated collectors of debris that invades ocean beaches. The site allows users to track their individual and collective impact on collected trash across various coastal geographies. By transforming the beach into places where sand smiles, users not only contribute to a cleaner environment but also gain financial benefits. Sandsmile acts to foster a community of socially responsible citizens and companies, turning beach cleanup into a rewarding and impactful endeavor.
 
-Build web applications using React.js for the front end and python/flask for your backend API.
+![Captura de ecrã 2024-03-27 201138](https://github.com/Rebelo7/Sandsmile/assets/143350138/e8fb2a15-fccd-4569-a346-fb7e424a8412)
 
-- Documentation can be found here: https://start.4geeksacademy.com/starters/react-flask
-- Here is a video on [how to use this template](https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b)
-- Integrated with Pipenv for package managing.
-- Fast deployment to heroku [in just a few steps here](https://start.4geeksacademy.com/backend/deploy-heroku-posgres).
-- Use of .env file.
-- SQLAlchemy integration for database abstraction.
 
-### 1) Installation:
+BE SOCIALLY RESPONSIBLE CITIZEN
+After registering or logging in, you gain access to your personal page, where you can track your activity effectively:
 
-> If you use Github Codespaces (recommended) or Gitpod this template will already come with Python, Node and the Posgres Database installed. If you are working locally make sure to install Python 3.10, Node 
+Time Tracking: Use a timer to record the duration of your activity. Start and stop the timer to accurately log the time spent on cleaning;
 
-It is recomended to install the backend first, make sure you have Python 3.8, Pipenv and a database engine (Posgress recomended)
+Location Selection: Choose the specific beach where you're conducting the cleanup. This helps in organising and overviewing efforts;
 
-1. Install the python packages: `$ pipenv install`
-2. Create a .env file based on the .env.example: `$ cp .env.example .env`
-3. Install your database engine and create your database, depending on your database you have to create a DATABASE_URL variable with one of the possible values, make sure you replace the valudes with your database information:
+Amount Collected: Record the quantity of waste collected in liters. This data will assess your impact.
 
-| Engine    | DATABASE_URL                                        |
-| --------- | --------------------------------------------------- |
-| SQLite    | sqlite:////test.db                                  |
-| MySQL     | mysql://username:password@localhost:port/example    |
-| Postgress | postgres://username:password@localhost:5432/example |
 
-4. Migrate the migrations: `$ pipenv run migrate` (skip if you have not made changes to the models on the `./src/api/models.py`)
-5. Run the migrations: `$ pipenv run upgrade`
-6. Run the application: `$ pipenv run start`
+For dedicated participants who meet specific criteria, we offer an enhanced status called 'Cleaners Plus - Smilers':
 
-> Note: Codespaces users can connect to psql by typing: `psql -h localhost -U gitpod example`
+Eligibility: Cleaners who have been registered for over six months, with a minimum collection of 1000 liters and participation in at least one platform-organized event, qualify for 'Cleaners Plus - Smilers' status; Benefits: Upon achieving 'Smiler' status, you receive a 5% on donations. This incentive recognizes your commitment and encourages continued engagement in our cleanup initiatives.
 
-### Undo a migration
+![Captura de ecrã 2024-03-27 201322](https://github.com/Rebelo7/Sandsmile/assets/143350138/841b5254-1afe-408a-9f4c-7c4822942dff)
 
-You are also able to undo a migration by running
+Your donation, as a socially responsible company and/or individual, will be used to hold awareness-raising sessions, organize community clean-up events on Portugal's beaches, and reward our smiling cleaners who show the greatest dedication to the activity.
 
-```sh
-$ pipenv run downgrade
-```
-
-### Backend Populate Table Users
-
-To insert test users in the database execute the following command:
-
-```sh
-$ flask insert-test-users 5
-```
-
-And you will see the following message:
-
-```
-  Creating test users
-  test_user1@test.com created.
-  test_user2@test.com created.
-  test_user3@test.com created.
-  test_user4@test.com created.
-  test_user5@test.com created.
-  Users created successfully!
-```
-
-### **Important note for the database and the data inside it**
-
-Every Github codespace environment will have **its own database**, so if you're working with more people eveyone will have a different database and different records inside it. This data **will be lost**, so don't spend too much time manually creating records for testing, instead, you can automate adding records to your database by editing ```commands.py``` file inside ```/src/api``` folder. Edit line 32 function ```insert_test_data``` to insert the data according to your model (use the function ```insert_test_users``` above as an example). Then, all you need to do is run ```pipenv run insert-test-data```.
-
-### Front-End Manual Installation:
-
--   Make sure you are using node version 14+ and that you have already successfully installed and runned the backend.
-
-1. Install the packages: `$ npm install`
-2. Start coding! start the webpack dev server `$ npm run start`
-
-## Publish your website!
-
-This boilerplate it's 100% read to deploy with Render.com and Heroku in a matter of minutes. Please read the [official documentation about it](https://start.4geeksacademy.com/deploy).
-
-### Contributors
-
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
-
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
+![Captura de ecrã 2024-03-27 202102](https://github.com/Rebelo7/Sandsmile/assets/143350138/fa15e945-c3ae-436a-92ac-ddf92439088c)
